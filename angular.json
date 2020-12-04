@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "temperature-converter-Ang"
+  "defaultProject": "temperature-converter-Ang",
+  "cli": {
+    "analytics": "c45e5ba1-d697-47f3-9f58-484311dae603"
+  }
 }
