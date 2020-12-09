@@ -10,9 +10,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(value:string,check:string){
-    if(check==='option1')
+    if(check==='option1'){
       this.display=((Number(value)-32)*(5/9)).toFixed(2)+'°C';
-    else
-    this.display=((Number(value)*(9/5))+32).toFixed(2)+'°F';
+      return this.display;
+    }
+    else{
+      this.display=((Number(value)*(9/5))+32).toFixed(2)+'°F';
+      return this.display;
+    }
   }
 }
