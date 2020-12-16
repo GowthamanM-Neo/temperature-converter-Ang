@@ -18,7 +18,7 @@
                 </label>
               </div>
         <div class="submit">
-            <button class="btn btn-primary" (click)="onSubmit(num.value,(op1.checked?op1.value:op2.value))">Convert</button>
+            <button id="submitButton" class="btn btn-primary" (click)="onSubmit(num.value,(op1.checked?op1.value:op2.value))">Convert</button>
         </div>
         <h1 id="result" class="result text-center">{{display}}</h1>
     </div>
