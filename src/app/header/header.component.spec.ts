@@ -16,17 +16,17 @@ describe('HeaderComponent', () => {
     h1 = fixture.nativeElement.querySelector('h1');
   });
 
-  it('checking centigrade conversion',()=>{
+  it('test_case1',()=>{
       const a=component.onSubmit('0','option1');
       expect(a).toBe('-17.78°C');
   });
 
-  it('checking fahrenheit conversion',()=>{
+  it('test_case2',()=>{
     const b=component.onSubmit('0','option2');
     expect(b).toBe('32.00°F');
 });
 
-it('should display original title', () => {
+it('test_case3', () => {
   expect(h1.textContent).toContain("Temperature Converter");
 });
 
